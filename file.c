@@ -3,6 +3,20 @@
 #include<string.h>
 
 int main(){
+    printf("
+\ \      / / | | |_ _|_   _| ____|    |  _ \  _____   _(_) |      / ___/ ___|
+ \ \ /\ / /| |_| || |  | | |  _| _____| | | |/ _ \ \ / / | |_____| |  _\___ \
+  \ V  V / |  _  || |  | | | |__|_____| |_| |  __/\ V /| | |_____| |_| |___) |
+   \_/\_/  |_| |_|___| |_| |_____|    |____/ \___| \_/ |_|_|      \____|____/
+
+
+ _____                             _   _
+| ____|_ __   ___ _ __ _   _ _ __ | |_(_) ___  _ __
+|  _| | '_ \ / __| '__| | | | '_ \| __| |/ _ \| '_ \
+| |___| | | | (__| |  | |_| | |_) | |_| | (_) | | | |
+|_____|_| |_|\___|_|   \__, | .__/ \__|_|\___/|_| |_|
+                       |___/|_|
+");
     char flna[40];
     int ch;
     printf("Select Your Choice\n");
@@ -54,7 +68,7 @@ int main(){
 
         FILE *encf_name,*enccptedf_name;
         
-        encf_name = fopen(flna,"r");
+        
         char final[] = "Decrypted_";
 
         strcat(final,flna);
@@ -64,6 +78,7 @@ int main(){
             printf("File Empty Nothing To Decrypt\n");
         }
         else{
+            encf_name = fopen(flna,"r");
             
             char ch = fgetc(encf_name);
             while (ch!=EOF)
