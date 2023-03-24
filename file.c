@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 #include<string.h>
 
@@ -26,7 +25,6 @@ int main(){
         
         if(encf_name==NULL){
             printf("File Empty Nothing To Encrypt\n");
-            getch();
         }
         else{
             
@@ -64,7 +62,6 @@ int main(){
         
         if(encf_name==NULL){
             printf("File Empty Nothing To Decrypt\n");
-            getch();
         }
         else{
             
@@ -90,5 +87,4 @@ int main(){
     if(ch>2 || ch<1){
         printf("\nInavlid Choice!!!!!!!\n");
     }
-    getch();
 }
